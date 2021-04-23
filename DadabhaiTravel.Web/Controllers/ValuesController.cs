@@ -12,14 +12,14 @@ namespace DadabhaiTravel.Web.Controllers
 {
     public class ValuesController : ApiController
     {
-        // GET api/values
+        // GET api/values/Get Comment
         public async Task<IEnumerable<Comment>> GetComments()
         {
             CommentAPI _commenAPI = new CommentAPI();
            return await _commenAPI.CommentGetAll();
         }
 
-        // GET api/values
+        // GET api/values  Get Todo
         public async Task<IEnumerable<Todo>> GetTodos()
         {
             TodoAPI _TodoAPi = new TodoAPI();
