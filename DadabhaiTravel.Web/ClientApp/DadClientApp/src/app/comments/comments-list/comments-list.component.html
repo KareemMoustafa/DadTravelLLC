@@ -1,6 +1,4 @@
 <div class="jumtron" style="padding-top:80px;padding-left: 50px;">
-       
-
         <p-table #dt [value]="Service.list" dataKey="id" [paginator]="true"  [rows]="10"  [rowsPerPageOptions]="[5,10,15,20]">
          <ng-template pTemplate="caption">
             <div class="p-d-flex">
@@ -18,7 +16,6 @@
                     <th>Completed</th>             
                 </tr>
             </ng-template>
-          
             <ng-template pTemplate="body" let-comment>
                 <tr>
                     <td>{{ comment.userId }}</td>
