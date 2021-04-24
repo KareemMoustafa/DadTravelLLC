@@ -8,7 +8,8 @@ import { CommentsService } from './shared/comments.service';
 import { HttpClientModule } from '@angular/common/http';
 import {TableModule} from 'primeng/table';
 
-
+import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import {TableModule} from 'primeng/table';
   imports: [
     BrowserModule,
     HttpClientModule,
-    TableModule  
+    TableModule ,
+    ButtonModule,
+    RippleModule
   ],
   providers: [CommentsService],
   bootstrap: [AppComponent]
